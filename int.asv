@@ -1,0 +1,5 @@
+function q = int(p,c)
+% POLYNOM/INT INT(p,c) calculates the indefinite integral of the polynom p with the coefficient c.
+cf = p.c;
+d = length(cf) + 1; % degree
+q = polynom([p.c(1:d).*(d:-1:1), c]);
